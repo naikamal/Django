@@ -1,0 +1,62 @@
+/* navbar css is written in between Hash Block */
+
+/* ############################################################# */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+header {
+    color: white;
+    background-color: rgb(25, 35, 40);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 45px;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+nav ul {
+    display: flex;
+}
+nav li {
+
+    margin-inline: 15px;
+    list-style: none;
+}
+.logo {
+    font-weight: 600;
+    font-size: x-large;
+    cursor: pointer;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 14px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: rgb(246, 247, 249);
+    border-radius: 8px;
+    color: black;
+}
+.icon {
+    font-size: 22px;
+    align-items: center;
+    margin-left: 5%;
+    cursor: pointer;
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    nav ul li {
+        display: none;
+    }
+    .icon {
+        display: flex;
+    }
+}
+/* ##################################################################### */
