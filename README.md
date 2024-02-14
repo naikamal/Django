@@ -1,6 +1,7 @@
+
 # MyWebsite - Django Practice Project
 
-Welcome to MyWebsite, a Django practice project inspired by Corey Schafer's website with personal modifications. This project aims to enhance My Django skills by replicating and customizing the structure of a real-world website.
+Welcome to MyWebsite, a Django practice project inspired by Corey Schafer's website with personal modifications. This project aims to enhance my Django skills by replicating and customizing the structure of a real-world website.
 
 ## Project Setup
 
@@ -31,7 +32,6 @@ Start a new Django project named 'mywebsite':
 
 ```bash
 django-admin startproject mywebsite .
-
 ```
 
 ### App Creation
@@ -72,10 +72,10 @@ python manage.py startapp blog
 
 ## Customizations
 
-1. **Responsive Navbar**: Implemented a custom responsive navbar using pure CSS for a personalized touch.
-2. **Applying Concepts Learned**: Since I've learned various Django concepts, I'm actively applying and implementing them in this project. The goal is not to be a copycat but to showcase my understanding and creativity.
-3. **Future Enhancements**: Add more features, pages, and improvements to make the project uniquely yours.
+1. **Responsive Design**: All design elements are created using pure CSS and HTML. A responsive pseudo-frontend has been implemented, taking inspiration from Corey but avoiding the use of Bootstrap.
+2. **Applying Concepts Learned**: Actively applying Django concepts, dummy data is passed from views to templates. Utilizing for loops in templates, the project is a practical implementation of learned concepts.
+3. **Future Enhancements**: The project is still in process, with ongoing enhancements, additions, and refinements to make it uniquely mine.
 
-   ****************************
+---
 
-    ONGOING......
+**ONGOING......**

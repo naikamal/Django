@@ -18,7 +18,7 @@
         <nav class="navbar">
             <div class="logo">MyLogo</div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="{% url 'blog-home' %}" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Register</a></li>
@@ -31,8 +31,24 @@
         </nav>
     </header>
 
-    {% block content %}
-    {% endblock content %}
+    <main>
+        <div class="container">
+            <div class="main">
+                {% block content %}
+                {% endblock content %}
+
+            </div>
+            <div class="aside">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio possimus iure ratione voluptatem cum
+                    dolorem ipsam voluptatum nulla dolor autem! Animi fugiat quasi veniam ad expedita, velit qui impedit
+                    rem recusanda
+                </p>
+
+            </div>
+        </div>
+
+    </main>
+
 </body>
 
 </html>

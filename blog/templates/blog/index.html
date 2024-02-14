@@ -1,6 +1,21 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-<h1>this is home page</h1>
-  
+
+{% for post in posts %}
+<div class="eachpost">
+    <small><b>{{post.auther}}</b></small>
+    <small class="date">{{post.date_posted}}</small>
+    <hr>
+    <h2>{{post.title}}</h2>
+    <fieldset>
+
+        <p>"{{post.content}}"</p>
+    </fieldset>
+
+</div>
+<br>
+
+{% endfor %}
+
 {% endblock content %}
