@@ -27,10 +27,12 @@ nav li {
     list-style: none;
 }
 
-.logo {
+.logo a {
     font-weight: 600;
     font-size: x-large;
     cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 nav ul li a {
@@ -75,7 +77,7 @@ body {
     margin: auto;
     box-sizing: border-box;
     justify-content: space-between;
-    height: 100vh;
+    height: 100%;
 }
 
 .main {

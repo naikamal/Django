@@ -8,18 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href='{% static "blog/css/style.css" %}'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>home</title>
 
+    {% if title %}
+    <title>Blog | {{title}}</title>
+    {% else %}
+    <title>Blog-Home</title>
+    {% endif %}
+    
 </head>
 
 <body>
     <!-- code for navbar is here  -->
     <header>
         <nav class="navbar">
-            <div class="logo">MyLogo</div>
+            <div class="logo"><a href="{% url 'blog-home' %}">MyLogo</a></div>
             <ul>
                 <li><a href="{% url 'blog-home' %}" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="{% url 'blog-about' %}">About</a></li>
+                <li><a href="">About</a></li>
                 <li><a href="#">Profile</a></li>
                 <li><a href="#">Register</a></li>
             </ul>
