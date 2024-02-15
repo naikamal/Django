@@ -1,12 +1,7 @@
-/* navbar css is written in between Hash Block */
-
-/* ############################################################# */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 header {
@@ -28,7 +23,6 @@ nav ul {
 }
 
 nav li {
-
     margin-inline: 15px;
     list-style: none;
 }
@@ -54,7 +48,6 @@ nav ul li a.active {
 
 .icon {
     font-size: 22px;
-    align-items: center;
     margin-left: 5%;
     cursor: pointer;
     display: none;
@@ -69,11 +62,6 @@ nav ul li a.active {
         display: flex;
     }
 }
-
-/* ##################################################################### */
-
-
-/* css for all main content  starts from here */
 
 body {
     background-color: #ffffff;
@@ -99,26 +87,27 @@ body {
 
 .aside {
     box-sizing: border-box;
-    margin: 1.5% 3% 0 0;
-    border-radius: 8px;
+    margin: 2% 2%;
+     border-radius: 8px;
     background-color: #f6f6f6;
-    width: 28%;
+    width: 32%;
     height: 34vh;
     box-shadow: 0 20px 38px 0 rgba(0, 0, 0, .22), 0 5px 9px 0 rgba(0, 0, 0, .18);
-    padding: 10px 10px 10px 13px;
+    padding: 10px 13px;
+    order: 1;
 }
 
 .eachpost {
     background-color: #f6f6f6;
     border-radius: 8px;
-    padding: 10px 10px 10px 13px;
+    padding: 10px 13px;
     box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
 }
 
 .eachpost h2 {
     display: inline-block;
     align-items: center;
-    margin: 2% 0 2% 0%;
+    margin: 2% 0;
 }
 
 .date {
@@ -153,13 +142,13 @@ body {
     .main {
         width: 100%;
         padding: 4%;
-
     }
 
-    .eachpost {
-        padding-right: 2%;
+    .aside {
+        width: 40%;
+        margin: 2% auto;
+        order: 1;
     }
-
 }
 
 @media (max-width: 600px) {
@@ -174,6 +163,7 @@ body {
 
     .main {
         justify-content: center;
-
     }
+        .aside {
+            width: 60%;}
 }
