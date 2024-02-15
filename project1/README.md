@@ -70,6 +70,18 @@ python manage.py startapp blog
     - `templates/`: HTML templates.
     - `static/`: Static files (CSS, JavaScript, etc.).
 
+## Database Setup
+
+1. **Create Post Model**: Define a 'Post' model in the 'blog' app's `models.py`.
+2. **Register in Admin**: Register the 'Post' model in the Django admin panel.
+3. **Use Default User Model**: Utilize the default Django User model for authentication.
+4. **One-to-Many Relationship**: Establish a one-to-many relationship between the User and Post models.
+5. **Make Migrations**: Generate migrations for the new models.
+6. **Pass Actual Data**: Use Django shell to pass actual data into the database.
+7. **Queries**: Practice querying data using Django's ORM.
+8. **Remove Dummy Data**: Remove any dummy data initially added.
+9. **Create Superuser**: Create a superuser for admin access.
+
 ## Customizations
 
 1. **Responsive Design**: All design elements are created using pure CSS and HTML. A responsive pseudo-frontend has been implemented, taking inspiration from Corey but avoiding the use of Bootstrap.
