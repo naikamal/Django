@@ -8,7 +8,7 @@ def register(request):
         form=UserCreationForm(request.POST)
         if form.is_valid():
             username=form.cleaned_data.get("username")
-            # messages.success(request,f"Account is created for {username} Successfully! f")
+            messages.success(request,f"Account is created for {username} Successfully! f")
             return redirect("blog-home")
             messages.error(request,f"message not sent")
             
