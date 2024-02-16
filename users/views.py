@@ -7,10 +7,13 @@ def register(request):
     if request.method== "POST":
         form=UserCreationForm(request.POST)
         if form.is_valid():
+            form.save()
             username=form.cleaned_data.get("username")
-            messages.success(request,f"Account is created for {username} Successfully! f")
-            return redirect("blog-home")
-            messages.error(request,f"message not sent")
+            try:
+                messages.success(request,f"Account is created for {username} Successfully!")
+                return redirect("blog-home")
+            except:
+                messages.error(request,f"Invalid credential!  *Please Try Again*")
             
     else:
         form=UserCreationForm()
