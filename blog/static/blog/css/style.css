@@ -186,6 +186,9 @@ body {
     border: 1px solid black;
     border-radius: 4px;
     margin-top: 6px;
+    }
+.formBtn:hover{
+    background-color: red;
 }
 .h3{
     text-align: center;
@@ -202,13 +205,30 @@ body {
     padding: 8px;
     color: blue;
 }
+.smallDiv{
+    margin-top: 5px;
+}
+.smallDiv a{
+   margin-left: 8px;
+   color: rgb(18, 93, 255);
+   outline: 1px solid blue;
+   border-radius: 4px ;
+   padding: 1px 3px;
+   text-decoration: none;
+}
 
 /* styling for message */
 .messages{
     width: inherit;
     position: absolute;
     margin-bottom: 5px;
-    background-color: green;
+    background-color: rgb(29, 143, 29);
     list-style: none;
     top: 53px;
+    border-radius: 4px;
+    padding-left:2%;
+
 }
+
+
+
